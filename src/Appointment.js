@@ -1,10 +1,12 @@
 import React from "react";
 import Nav from "./Nav";
 import Footer from "./Footer";
+import { useNavigate } from "react-router-dom";
 import "./App.css";
 import appointment from "./image/appointment.png";
 
 function Appointment() {
+  const navigate = useNavigate();
   return (
     <div>
       <Nav />
@@ -38,9 +40,18 @@ function Appointment() {
             <input
               type="submit"
               name="submit"
-              value="appointment now"
+              value="submit appointment"
               className="btn"
             />
+            <div>
+              <input
+                type="submit"
+                name="submit"
+                value="View Availability"
+                className="btn"
+                onClick={() => navigate("/Availability")}
+              />
+            </div>
           </form>
         </div>
       </section>

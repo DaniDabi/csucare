@@ -311,6 +311,11 @@ section:nth-child(even) {
   font-size: 2.5rem;
   padding: 1rem 0;
 }
+.services .box-container .box h2 {
+  color: var(--black);
+  font-size: 1.5rem;
+  padding: 0.3rem 0;
+}
 
 .services .box-container .box p {
   color: var(--light-color);
@@ -744,4 +749,56 @@ form .button input:hover {
 }
 form .signup-link a:hover {
   text-decoration: underline;
+}
+
+/*calendar*/
+.container2 {
+  background-color: #3b8686;
+  max-width: 1000px;
+  margin: 170px auto;
+  border-radius: 10px;
+}
+.calendar {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.calendar th {
+  text-align: center;
+  padding: 10px;
+  background-color: #79bd9a;
+  border: 1px solid #79bd9a;
+  font-weight: bold;
+  color: white;
+  font-size: 16px;
+}
+
+.calendar td {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #79bd9a;
+}
+
+.calendar-cell {
+  background-color: #ffff;
+  font-size: 14px;
+}
+.calendarTitle {
+  padding-bottom: 20px;
+  color: white;
+  font-size: 20px;
+}
+.iconBack {
+  color: white;
+  padding-top: 20px;
+  padding-left: 20px;
+  font-size: 16;
+}
+.not-available {
+  background-color: #ffff;
+  color: red;
+}
+.other-month {
+  background-color: #ffff;
+  color: #ffff;
 }

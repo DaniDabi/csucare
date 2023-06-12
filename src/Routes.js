@@ -6,6 +6,7 @@ import Doctors from "./Doctors";
 import Appointment from "./Appointment";
 import Login from "./Login";
 import Register from "./Register";
+import Calendar from "./calendar";
 
 const AppRoutes = () => {
   return (
@@ -18,6 +19,7 @@ const AppRoutes = () => {
         <Route path="Appointment" element={<Appointment />} />
         <Route path="Login" element={<Login />} />
         <Route path="Register" element={<Register />} />
+        <Route path="Availability" element={<Calendar />} />
       </Routes>
     </Router>
   );

@@ -72,7 +72,7 @@ function renderWeeks(days) {
           key={day.format("YYYY-MM-DD")}
           className={`calendar-cell ${isWeekend(day) ? "weekend" : ""} ${
             isNotJune(day) ? "other-month" : ""
-          } ${isNotAvailable(day) ? "not-available" : ""}`}
+          } ${isWeekend(day) || isNotAvailable(day) ? "not-available" : ""}`}
         >
           {day.format("D")}
         </td>

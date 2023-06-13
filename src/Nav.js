@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { FaHeartbeat } from "react-icons/fa";
+import { FaHeartbeat, FaBars } from "react-icons/fa";
 import "./App.css";
 
 function Nav() {
@@ -37,7 +37,9 @@ function Nav() {
           Log In
         </a>
       </nav>
-      <div id="menu-btn" className="fas fa-bars"></div>
+      <div id="menu-btn" className="fas">
+        <FaBars />
+      </div>
     </header>
   );
 }
